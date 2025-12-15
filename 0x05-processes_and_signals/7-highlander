@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# A Bash script that traps SIGTERM and prints a message, while keeping the process alive
+
+trap 'echo "I am invincible!!!"' SIGTERM
+echo "OK"
+while true; do
+  sleep 1
+done
